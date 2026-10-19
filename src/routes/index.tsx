@@ -19,7 +19,7 @@ export const Route = createFileRoute("/")({
     ],
     links: [
       { rel: "preload", as: "image", href: poster },
-      { rel: "preload", as: "video", href: VIDEO_SRC, type: "video/mp4" },
+      { rel: "preload", as: "fetch", href: VIDEO_SRC, type: "video/mp4" },
     ],
   }),
   component: Index,
