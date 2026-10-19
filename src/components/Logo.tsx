@@ -8,7 +8,7 @@ export function Logo({ className }: { className?: string }) {
     <svg
       viewBox="-2 -2 327.657 117.525"
       role="img"
-      aria-label="kesa.co"
+      aria-label="kesaco"
       className={className}
       xmlns="http://www.w3.org/2000/svg"
     >
