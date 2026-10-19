@@ -13,9 +13,9 @@ const REPLAY_PAUSE_MS = 2000;
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "kesaco — Coming Soon" },
+      { title: "kesaco" },
       { name: "description", content: "kesaco. Something new is taking shape at kesaco.ca." },
-      { property: "og:title", content: "kesaco — Coming Soon" },
+      { property: "og:title", content: "kesaco" },
       { property: "og:description", content: "kesaco. Something new is taking shape at kesaco.ca." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://kesaco.ca" },
