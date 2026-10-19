@@ -8,11 +8,17 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
   tanstackStart: {
+    // Enable prerendering to build static HTML files for GitHub Pages
+    prerender: {
+      enabled: true,
+      autoSubfolderIndex: true,
+      autoStaticPathsDiscovery: true,
+      crawlLinks: true,
+    },
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-    // nitro/vite builds from this
     server: { entry: "server" },
   },
   vite: {
-    base: "/cinemati-logo-stage/", // Replace with your exact GitHub repository name
+    base: "/cinematic-logo-stage/",
   },
 });
