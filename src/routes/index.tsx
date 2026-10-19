@@ -56,7 +56,7 @@ function Index() {
   }, []);
 
   return (
-    <main className="relative h-dvh w-full overflow-hidden bg-background select-none" onContextMenu={block}>
+    <main className="fixed inset-0 h-dvh w-full touch-none overflow-hidden bg-background select-none" onContextMenu={block}>
       <video
         ref={videoRef}
         className="pointer-events-none absolute inset-0 h-full w-full object-cover"

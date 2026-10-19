@@ -69,7 +69,26 @@
   --logo: oklch(0.96 0.03 85);
 }
 
-html, body { overscroll-behavior: none; overflow: hidden; height: 100dvh; }
+html, body {
+  overscroll-behavior: none;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+/* Fallback for older browsers without dynamic viewport units. */
+@supports not (height: 100dvh) {
+  html, body { height: 100vh; }
+}
+@supports (height: 100dvh) {
+  html, body { height: 100dvh; }
+}
+
+/* Hard scroll lock: stops iOS Safari rubber-banding and pull-to-refresh. */
+body {
+  position: fixed;
+  inset: 0;
+}
 
 :root {
   --radius: 0.625rem;
