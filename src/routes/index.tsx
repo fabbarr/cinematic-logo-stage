@@ -79,7 +79,7 @@ function Index() {
           initial={{ opacity: 0, scale: 0.96, filter: "blur(8px)" }}
           animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
           transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
-          className="w-48 text-logo drop-shadow-logo sm:w-64 md:w-80 lg:w-96 2xl:w-[32rem]"
+          className="w-72 max-w-full text-logo drop-shadow-logo sm:w-96 md:w-[30rem] lg:w-144 2xl:w-[48rem]"
         >
           <Logo className="h-auto w-full" />
         </motion.h1>
