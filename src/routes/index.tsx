@@ -14,11 +14,12 @@ const REPLAY_PAUSE_MS = 2000;
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "kesa.co — Coming Soon" },
-      { name: "description", content: "kesa.co. Something new is taking shape." },
-      { property: "og:title", content: "kesa.co — Coming Soon" },
-      { property: "og:description", content: "kesa.co. Something new is taking shape." },
+      { title: "kesaco — Coming Soon" },
+      { name: "description", content: "kesaco. Something new is taking shape at kesaco.ca." },
+      { property: "og:title", content: "kesaco — Coming Soon" },
+      { property: "og:description", content: "kesaco. Something new is taking shape at kesaco.ca." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://kesaco.ca" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
@@ -85,7 +86,7 @@ function Index() {
       </header>
 
       <footer className="absolute inset-x-0 bottom-0 z-10 pb-[max(1rem,env(safe-area-inset-bottom))] text-center text-[10px] uppercase tracking-[0.4em] text-logo/60">
-        © {new Date().getFullYear()} kesa.co
+        © {new Date().getFullYear()} kesaco
       </footer>
     </main>
   );
