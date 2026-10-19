@@ -23,6 +23,7 @@ export const Route = createFileRoute("/")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "canonical", href: "https://kesaco.ca" },
       { rel: "preload", as: "image", href: poster },
       { rel: "preload", as: "fetch", href: VIDEO_SRC, type: "video/mp4" },
     ],
