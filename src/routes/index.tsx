@@ -2,11 +2,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { useEffect, useRef, type MouseEvent } from "react";
 import poster from "@/assets/hero-poster.jpg";
-import heroVideo from "@/assets/hero-bg.mp4.asset.json";
 import { Logo } from "@/components/Logo";
 
-// Static, build-time media URLs only — never derived from user input.
-const VIDEO_SRC: string = heroVideo.url;
+// Point directly to the video stored in public/testcard.mp4 using the base URL
+const VIDEO_SRC = `${import.meta.env.BASE_URL}testcard.mp4`;
 
 // The clip is short, so it holds on its final frame for this long before replaying.
 const REPLAY_PAUSE_MS = 2000;
